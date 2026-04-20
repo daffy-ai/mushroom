@@ -29,7 +29,7 @@ python src/train.py
 ## Evaluate
 
 ```bash
-python src/evaluate.py
+python -m src.evaluate
 ```
 
 ## Run demo
@@ -37,3 +37,13 @@ python src/evaluate.py
 ```bash
 streamlit run app.py
 ```
+
+## Model Performance
+
+- **Validation Accuracy:** 92.11%
+- **Test Accuracy:** 84.35%
+- **Precision:** 87.14%
+- **Recall:** 87.14%
+- **F1 Score:** 87.14%
+
+Trained on 532 training samples and validated on 114 samples using ResNet18 transfer learning.
