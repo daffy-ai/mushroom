@@ -1,6 +1,10 @@
 import torch
-from .preprocess import get_data_loaders
-from .model import get_model
+try:
+    from .preprocess import get_data_loaders
+    from .model import get_model
+except ImportError:
+    from src.preprocess import get_data_loaders
+    from src.model import get_model
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 def evaluate_model():

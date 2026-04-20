@@ -1,8 +1,12 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from .preprocess import get_data_loaders
-from .model import get_model
+try:
+    from .preprocess import get_data_loaders
+    from .model import get_model
+except ImportError:
+    from src.preprocess import get_data_loaders
+    from src.model import get_model
 import os
 
 def train_model(epochs=50, batch_size=16, lr=0.0001):
