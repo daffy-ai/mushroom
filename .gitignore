@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.egg-info/
+dist/
+build/
+.env
+models/
+data/mushroom_disease.zip
+data/download.py
+data/monitor_download.py
+.streamlit/
+*.log
